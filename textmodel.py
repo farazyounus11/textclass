@@ -27,7 +27,8 @@ def make_predictions(tfidf_vectorizer, logreg_selected, neural_net, nb_classifie
 # Streamlit app
 st.title('Text Classification App by Faraz')
 
-# Load models
+st.write("## This app classifies the text of different subjects. Input a text and it will be classified.")
+
 tfidf_vectorizer, logreg_selected, neural_net, nb_classifier, selector_weights = load_models()
 
 # Text input
